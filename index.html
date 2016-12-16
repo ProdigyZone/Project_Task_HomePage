@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+	<title>音声解析による話者認証</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="jquery-fadethis-master/dist/jquery.fadethis.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="geometryangle.min.js"></script>
+	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+</head>
+<body>
+<header>
+<div class="to-project" href="#Top">Project Team 10</div>
+<ul style="list-style:none;" class="header">
+	<li class="to" id="purpose"><a href="#Purpose"><i class="fa fa-flag"></i> PURPOSE</a></li>
+	<li class="to mechanism"><a href="#Mechanism"><i class="fa fa-gear fa-spin"></i> MECHANISM</a></li>
+	<li class="to"><a href="#Member"><i class="fa fa-users"></i> MEMBER</a></li>
+	<li class="to"><a href="#Update"><i class="fa fa-info-circle"></i> UPDATE</a></li>
+</ul>
+</header>
+<div class="top-contain">
+	<div class="top-section">
+	<div class="top-title"><div class = "title-section">音声解析による話者認証</div><br><div class="slide-bottom">
+	<img src="image/speak.ico" class="img left" >
+	<img src="image/Microphone.png" class="img right">
+	</div>
+	</div>
+
+	</div>
+</div>
+<div class="purpose-contain" id="Purpose">
+	<div class="purpose-title">PURPOSE</div>
+	<div class="purpose-contents">
+	<img src="image/rec.jpg" class="rec">
+	<div class="purpose-sentence">
+	<p class="box">
+	声優は「声」のみで演技する俳優です。<br>今やアニメのキャラとしてCDデビューしたりと様々な活動を行っています。
+	その声優の発した言葉を一文字ずつ音声解析し、そして機械学習によってより高い精度でおける話者認証の実現行うことが我々の目的です。</p>
+	</div>
+	</div>
+</div>
+<div class="mechanism-contain" id="Mechanism">
+	<div class="mechanism-title">MECHANISM</div>
+	<img src="image/mec.png" class="mechanism-image box" align="left">
+		<div class="mechanism-sentence">初めに二人の音声をできるだけ収集し、それらをJuliusというソフトウェアを用いて音素ごとに認識します。<br>
+その結果をもとに音素ごとに分割するプログラムを作成し、音声を音素ごとに分割しどれが解析対象のファイルなのかわかるようにします。<br>
+そして分割されたそれらのファイルをMATLABを用いて解析し、MFCCを得ます。<br>得られたMFCCを蓄積しそれらを結果ごとに分け、機械学習のサンプルとします。
+</div>
+	</div>
+<div class="member-contain" id="Member">
+	<div class="member-title" >MEMBER</div>
+	<ul class="member-list" style= "list-style-type:square;">
+		<li><h3>✴︎中西潤</h3><span class="position">　-　HP作成、解析サンプル事前収集</span></li>
+		<li><h3>熊谷知博</h3><span class="position">　-　機械学習の学習、解析テスト</span></li>
+		<li><h3>神修平</h3><span class="position">　-　機械学習の学習、プログラム作成、資料作成</span></li>
+		<li><h3>春山舞</h3><span class="position">　-　解析方法の学習、解析テスト</span></li>
+		<li><h3>廣松風子</h3><span class="position">　-　解析方法の学習、解析テスト</span></li>
+		<li><h3>山口純平</h3><span class="position">　-　HP作成、解析サンプル事前収集</span></li>
+		<li><h3>山田真平</h3><span class="position">　-　解析方法の学習、解析テスト</span></li>
+	</ul>
+</div>
+<div class="update-contain" id="Update">
+	<div class="update-title">UPDATE</div>
+	<div class="update-sentence">
+	・10/21(金)ホームページをオープンしました。<br>
+	・10/21(金)第１回目の中間発表の資料をアップロードしました。閲覧は<a href ="Project10_Anoucement1.pdf" class="pdf">こちら</a>。
+	</div>
+</div>
+<p id="page-top"><a href="#wrap">⬆︎TOP</a></p>
+</body>
+</html>
